@@ -4,24 +4,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>The Infinity Bike</title>
-
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css" />
-	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css">
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-
-	
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-	<script src="Script/script.js"></script>
-	
 	<link href="style.css" rel="stylesheet">
-	
 </head>
 <body>
 
@@ -29,25 +17,7 @@
 <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
 	<div class="container-fluid">
 		<a class="navbar-brand" href="#"><img src="Image/logo.png" alt="Logo" width="200" height="100"></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse id="navbarResposinve">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#"><img src="https://img.icons8.com/material-rounded/24/000000/home.png"/>Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#services"><img src="https://img.icons8.com/metro/26/000000/services.png"/>Service</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#team"><img src="https://img.icons8.com/material-sharp/24/000000/user-group-man-woman.png"/>Team</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#connect"><img src="https://img.icons8.com/material-rounded/24/000000/share-2.png"/>Connect</a>
-				</li>
-			</ul>
-		</div>
+		<h1>THE INFINITY BIKE SHOP</h1>
 	</div>
 	
 		
@@ -105,7 +75,7 @@
 <div class="container-fluid padding">
 	<div class="row welcome text-center">
 		<div class="col-12">
-			<h1 id="services"class="display-4">Our services</h1>
+			<h1 class="display-4">Our services</h1>
 		</div>
 		<hr>
 		
@@ -151,7 +121,7 @@
 <div class="container-fluid padding">
 	<div class="row welcome text-center">
 		<div class="col-12">
-			<h1 id="team" class="display-4">Meet the Team</h1>
+			<h1 class="display-4">Meet the Team</h1>
 		</div>
 		<hr>
 	</div>
@@ -167,13 +137,13 @@
 					<h4 class="card-title">John Doe</h4>
 					<p class="card-text">John Doe Has over 30 years of experiences with bike break. He knows how to Install, Repair and Modify them to fit your needs</p>
 					<p class="card-text"><b>Price: $30 CAD</b></p>
-					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bookbreak">Book Appointment</button>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bookbreak">Book Appointment (Bike Breaks)</button>
 					<div class="modal fade" id="bookbreak">
 						<div class="modal-dialog">
 							<div class="modal-content">
 
 								<div class="modal-header text-center">
-									<h4 class="modal-title text center w-100 font-weight-bold">Book An Appointment (John Doe)</h4>
+									<h4 class="modal-title text center w-100 font-weight-bold">Book An Appointment (Break)</h4>
 									<button type="button" class="close" data-dismiss="modal" aria-label="close">&times;</button>
 								</div>
 								<div class="modal-body mx-3">
@@ -184,35 +154,15 @@
 									</div>
 
 									<div class="md-form mb-5">
-										<img src="https://img.icons8.com/metro/26/000000/phone.png"/>
-										<input class="form-control" name="phonenumber" type="text" maxlength="10" id="tel-input" placeholder="(XXX)-XXX-XXXX" style="width: 27em;">
+										<i class="fa fa-phone prefix grey-text"></i>
+										<input class="form-control" type="tel" id="tel-input" placeholder="Enter your Phone Number">
 										<label for="tel-input" class="col-2 col-form-label"></label>
 									</div>
 
-									
 									<div class="md-form mb-5">
-										
-										<p><img src="https://img.icons8.com/pastel-glyph/64/000000/wrench--v2.png" width="35" height="35"><strong>what's the purpose your Appointment</strong></p>
-										<input type="checkbox" id="services1" name="services1" value="Break">
-										<label for="services1">Break</label><br>
-										<input type="checkbox" id="services2" name="services2" value="Tire">
-										<label for="services2">Tires</label><br>
-										<input type="checkbox" id="services3" name="services3" value="Maintenance">
-										<label for="Maintenance">Maintenance</label>
-									
-									</div>
-
-									<div class="md-form mb-5">
-										<img src="https://img.icons8.com/ios-filled/50/000000/calendar.png" width="50" height="50" >
-										<input id="date-picker1" type="text" placeholder="yy-mm-dd" size="40" >
-										<label for="date-picker1" class="col-2 col-form-label"></label>
-									</div>
-
-									<div class="md-form mb-5">
-										<img src="https://img.icons8.com/dotty/80/000000/mastercard-credit-card.png" width="50" height="55"/>
-										<input id="ccn-input" type="text" inputmode="numeric" maxlength="16" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" size="40" placeholder="xxxx xxxx xxxx xxxx" style="width: 20em;">
-										<div class="tool-tip bottom  slideIn "><img src="https://img.icons8.com/emoji/48/000000/warning-emoji.png"/>$20 will be charged if you did not show up</div>
-										<label for="ccn-input" class="col-2 col-form-label"></label>
+										<i class="	fas fa-calendar-alt prefix grey-text"></i>
+										<input class="form-control" type="datetime-local" value="2020-06-08T11:45:00" id="datetime-local-input" placeholder="Pick a Date and Time">
+										<label for="datetime-local-input" class="col-2 col-form-label"></label>
 									</div>
 								</div>
 
@@ -232,14 +182,13 @@
 					<h4 class="card-title">Jack Doe</h4>
 					<p class="card-text">Jack Doe Has over 30 years of experiences with Tires. He knows how to Install, Repair and Modify them to fit your needs</p>
 					<p class="card-text"><b>Price: $40 CAD</b></p>
-					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bookTire">Book Appointment</button>
-		
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bookTire">Book Appointment (Bike Tires)</button>
 					<div class="modal fade" id="bookTire">
 						<div class="modal-dialog">
 							<div class="modal-content">
 
 								<div class="modal-header text-center">
-									<h4 class="modal-title text center w-100 font-weight-bold">Book An Appointment (Jack Doe)</h4>
+									<h4 class="modal-title text center w-100 font-weight-bold">Book An Appointment (Tires)</h4>
 									<button type="button" class="close" data-dismiss="modal" aria-label="close">&times;</button>
 								</div>
 								<div class="modal-body mx-3">
@@ -250,35 +199,15 @@
 									</div>
 
 									<div class="md-form mb-5">
-										<img src="https://img.icons8.com/metro/26/000000/phone.png"/>
-										<input class="form-control" name="phonenumber" type="text" maxlength="10" id="tel-input1" placeholder="(XXX)-XXX-XXXX" style="width: 27em;">
-										<label for="tel-input1" class="col-2 col-form-label"></label>
-									</div>
-
-									
-									<div class="md-form mb-5">
-										
-										<p><img src="https://img.icons8.com/pastel-glyph/64/000000/wrench--v2.png" width="35" height="35"><strong>what's the purpose your Appointment</strong></p>
-										<input type="checkbox" id="services1" name="services1" value="Break">
-										<label for="services1">Break</label><br>
-										<input type="checkbox" id="services2" name="services2" value="Tire">
-										<label for="services2">Tires</label><br>
-										<input type="checkbox" id="services3" name="services3" value="Maintenance">
-										<label for="Maintenance">Maintenance</label>
-									
+										<i class="fa fa-phone prefix grey-text"></i>
+										<input class="form-control" type="tel" id="tel-input" placeholder="Enter your Phone Number">
+										<label for="tel-input" class="col-2 col-form-label"></label>
 									</div>
 
 									<div class="md-form mb-5">
-										<img src="https://img.icons8.com/ios-filled/50/000000/calendar.png" width="50" height="50" >
-										<input id="date-picker2" type="text" placeholder="yy-mm-dd" size="40" >
-										<label for="date-picker2" class="col-2 col-form-label"></label>
-									</div>
-
-									<div class="md-form mb-5">
-										<img src="https://img.icons8.com/dotty/80/000000/mastercard-credit-card.png" width="50" height="55"/>
-										<input id="ccn-input1" type="text" inputmode="numeric" maxlength="16" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" size="40" placeholder="xxxx xxxx xxxx xxxx" style="width: 20em;">
-										<div class="tool-tip bottom  slideIn "><img src="https://img.icons8.com/emoji/48/000000/warning-emoji.png"/>$20 will be charged if you did not show up</div>
-										<label for="ccn-input" class="col-2 col-form-label"></label>
+										<i class="	fas fa-calendar-alt prefix grey-text"></i>
+										<input class="form-control" type="datetime-local" value="2020-06-08T11:45:00" id="datetime-local-input" placeholder="Pick a Date and Time">
+										<label for="datetime-local-input" class="col-2 col-form-label"></label>
 									</div>
 								</div>
 
@@ -298,14 +227,13 @@
 					<h4 class="card-title">Name Doe</h4>
 					<p class="card-text">Name Doe Has over 30 years of experiences with bikes. He knows how to maintenance your bick from getting rust so the bike is always at its max Performace </p>
 					<p class="card-text"><b>Price: $50 CAD</b></p>
-					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bookMaintenance">Book Appointment</button>
-	
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bookMaintenance">Book Appointment (Bike Maintenance)</button>
 					<div class="modal fade" id="bookMaintenance">
 						<div class="modal-dialog">
 							<div class="modal-content">
 
 								<div class="modal-header text-center">
-									<h4 class="modal-title text center w-100 font-weight-bold">Book An Appointment (Name Doe)</h4>
+									<h4 class="modal-title text center w-100 font-weight-bold">Book An Appointment (Maintenance)</h4>
 									<button type="button" class="close" data-dismiss="modal" aria-label="close">&times;</button>
 								</div>
 								<div class="modal-body mx-3">
@@ -316,35 +244,15 @@
 									</div>
 
 									<div class="md-form mb-5">
-										<img src="https://img.icons8.com/metro/26/000000/phone.png"/>
-										<input class="form-control" name="phonenumber" type="text" maxlength="10" id="tel-input2" placeholder="(XXX)-XXX-XXXX" style="width: 27em;">
+										<i class="fa fa-phone prefix grey-text"></i>
+										<input class="form-control" type="tel" id="tel-input" placeholder="Enter your Phone Number">
 										<label for="tel-input" class="col-2 col-form-label"></label>
 									</div>
 
-									
 									<div class="md-form mb-5">
-										
-										<p><img src="https://img.icons8.com/pastel-glyph/64/000000/wrench--v2.png" width="35" height="35"><strong>what's the purpose your Appointment</strong></p>
-										<input type="checkbox" id="services1" name="services1" value="Break">
-										<label for="services1">Break</label><br>
-										<input type="checkbox" id="services2" name="services2" value="Tire">
-										<label for="services2">Tires</label><br>
-										<input type="checkbox" id="services3" name="services3" value="Maintenance">
-										<label for="Maintenance">Maintenance</label>
-									
-									</div>
-
-									<div class="md-form mb-5">
-										<img src="https://img.icons8.com/ios-filled/50/000000/calendar.png" width="50" height="50" >
-										<input id="date-picker3" type="text" placeholder="yy-mm-dd" size="40" >
-										<label for="date-picker3" class="col-2 col-form-label"></label>
-									</div>
-
-									<div class="md-form mb-5">
-										<img src="https://img.icons8.com/dotty/80/000000/mastercard-credit-card.png" width="50" height="55"/>
-										<input id="ccn-input2" type="text" inputmode="numeric" maxlength="16" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" size="40" placeholder="xxxx xxxx xxxx xxxx" style="width: 20em;">
-										<div class="tool-tip bottom  slideIn "><img src="https://img.icons8.com/emoji/48/000000/warning-emoji.png"/>$20 will be charged if you did not show up</div>
-										<label for="ccn-input" class="col-2 col-form-label"></label>
+										<i class="	fas fa-calendar-alt prefix grey-text"></i>
+										<input class="form-control" type="datetime-local" value="2020-06-08T11:45:00" id="datetime-local-input" placeholder="Pick a Date and Time">
+										<label for="datetime-local-input" class="col-2 col-form-label"></label>
 									</div>
 								</div>
 
@@ -367,7 +275,7 @@
 <div class="container-fluid padding">
 	<div class="row text-center padding">
 		<div class="col-12">
-			<h2 id="connect">Connect</h2>
+			<h2>Connect</h2>
 		</div>
 		<div class="col-12 social padding">
 			<a href="#"><i class="fab fa-facebook"></i></a>
