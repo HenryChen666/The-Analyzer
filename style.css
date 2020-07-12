@@ -29,10 +29,15 @@ html, body{
   transform: translateY(-50%);
 }
 
+#background1{
+  filter: blur(3px)
+}
+
 .carousel-caption h1{
   font-size: 500%;
   text-transform: uppercase;
-  text-shadow: 1px 1px 15px black;
+  text-shadow: 1px 1px 15px white;
+  color: black;
 }
 
 .carousel-caption h3{
@@ -41,6 +46,10 @@ html, body{
   text-transform: uppercase;
   text-shadow: 1px 1px 10px black;
   padding-bottom: 1rem;
+}
+
+#creategroup{
+  margin-left: 300px;
 }
 
 .btn-primary{
